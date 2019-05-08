@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FlexBox And Grid</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <header class="header">
+        <div class="search p-10">
+          <img
+            src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+            class="group__image radius blur"
+            alt="logo"
+          />
+          <div class="search__container radius">
+            <input
+              class="search__input"
+              placeholder=" 🔍 Search Facebook"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="p-10">
+          <ul class="icons">
+            <li class="icons__item active">
+              <img src="./images/svg/home.svg" alt="" />
+            </li>
+            <li class="icons__item">
+              <img src="./images/svg/notification.svg" alt="" />
+            </li>
+            <li class="icons__item">
+              <img src="./images/svg/video.svg" alt="" />
+            </li>
+            <li class="icons__item">
+              <img
+                src="https://dummyimage.com/35X35 /ddd/ddd.jpg"
+                class="radius"
+                alt=""
+              />
+            </li>
+            <li class="icons__item">
+              <img src="./images/svg/store.svg" alt="" />
+            </li>
+            <li class="icons__item">
+              <img src="./images/svg/people.svg" alt="" />
+            </li>
+            <li class="icons__item">
+              <img src="./images/svg/chat.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="settings p-10">settings</div>
+      </header>
+      <sidebar class="sidebar p-10">
+        <div class="sidebar__header">
+          <h2>Home</h2>
+          <a href="#">Create</a>
+        </div>
+        <div class="sidebar__content">
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Not-So-Secret Family Recipes</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Red Table Talk Group</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Events</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Saved</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Gaming</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Fundraisers</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Memories</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Help & Support</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>Settings & Privacy</div>
+          </div>
+          <div class="option">
+            <img
+              src="https://dummyimage.com/35X35/ddd/ddd.jpg"
+              class="option__img radius"
+              alt="logo"
+            />
+            <div>See More</div>
+          </div>
+        </div>
+        <div class="sidebar__footer">
+          Privacy · Terms · Advertising · Adchoices · Cookies · More facebook ©
+          2019
+        </div>
+      </sidebar>
+      <main class="content scroll">
+        <div class="content__header">
+          <h3>Stories</h3>
+          <a href="#">See all</a>
+        </div>
+        <div class="stories">
+          <div class="storie">
+            <div class="circle">+</div>
+            <h4 class="no-margin">Add to Story</h4>
+          </div>
+          <div class="storie">
+            <div class="circle"></div>
+            <h4 class="no-margin">Tom Russo</h4>
+          </div>
+          <div class="storie">
+            <div class="circle"></div>
+            <h4 class="no-margin">Anna Becklund</h4>
+          </div>
+          <div class="storie">
+            <div class="circle"></div>
+            <h4 class="no-margin">Dennis Han</h4>
+          </div>
+          <div class="storie">
+            <div class="circle"></div>
+            <h4 class="no-margin">Cynthia Lopez</h4>
+          </div>
+        </div>
+        <div class="posts">
+          <div class="add__post">
+            <img
+              src="https://dummyimage.com/50X50/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <button>Add a post</button>
+            <img
+              src="https://dummyimage.com/50X50/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+          </div>
+          <div class="post">
+            <div class="post__header">
+              <div class="post__user">
+                <img
+                  src="https://dummyimage.com/50X50/ddd/ddd.jpg"
+                  alt="my-image"
+                  class="radius"
+                />
+                <div class="post__info">
+                  <h4 class="post__username">Tom Russo</h4>
+                  <div>5 mins <span>🧔</span></div>
+                </div>
+              </div>
+              <div>...</div>
+            </div>
+            <div class="post__description">Not having fun at all 😜</div>
+            <div class="post__image">
+              <img src="./images/people-beach.jpg" alt="people" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="contacts p-10">
+        <h3>Suggested</h3>
+        <div class="suggested">
+          <div class="group">
+            <img
+              src="https://dummyimage.com/350X200/ddd/ddd.jpg"
+              class="group__image"
+              alt=""
+            />
+            <div class="group__link">
+              <h4><span>👪</span> Groups</h4>
+              <p>New ways to find and join communities</p>
+              <a class="group__button" href="#">Find Your Groups</a>
+            </div>
+          </div>
+          <div class="group__footer">
+            <img
+              class="radius"
+              src="https://dummyimage.com/20X20/ddd/ddd.jpg"
+              alt=""
+            />
+            <p class="group__friends">Henri and 9 friends joined Groups</p>
+          </div>
+        </div>
+        <div class="contacts__header">
+          <h3>Contacts</h3>
+          <div>...</div>
+        </div>
+        <div class="contacts_list">
+          <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div>
+          <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div>
+          <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div>
+          <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div>
+          <!-- <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div>
+          <div class="contacts_friend">
+            <img
+              src="https://dummyimage.com/35x35/ddd/ddd.jpg"
+              alt="my-image"
+              class="radius"
+            />
+            <p>Dennis Han</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

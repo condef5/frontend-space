@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: monospace, Helvetica, sans-serif;
+  letter-spacing: 0.75px;
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  padding: 1em;
+  margin: auto;
+}
+
+a {
+  color: #067df7;
+  text-decoration: none;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+}
+
+.days_item {
+  padding: 1em 2em;
+  background: #8e24aa;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 2em;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  transition: all 0.3s;
+}
+
+.days_item:hover {
+  background: #c158dc;
+}

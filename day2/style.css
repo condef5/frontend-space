@@ -93,7 +93,7 @@ svg path {
   fill: #67686e;
 }
 
-.settings img {
+.settings .svg-settings {
   width: 21px;
   background: #ddd;
   padding: 5px;
@@ -175,9 +175,20 @@ svg path {
   padding: 10px;
   margin-right: 10px;
   border-radius: 10px;
-  background-image: url(./images/perfil.jpg);
   color: #fff;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.35);
+}
+
+.storie:nth-child(3n + 1) {
+  background-image: url(./images/ternurita.jpg);
+}
+
+.storie:nth-child(3n) {
+  background-image: url(./images/foca.jpg);
+}
+
+.storie:nth-child(3n + 2) {
+  background-image: url(./images/perfil.jpg);
 }
 
 .circle {
@@ -288,10 +299,11 @@ svg path {
 .group__footer {
   padding: 12px;
   display: flex;
+  align-items: center;
 }
 
 .group__footer > img {
-  flex: 1;
+  /* flex: 1; */
 }
 .group__friends {
   padding-left: 5px;
@@ -429,16 +441,27 @@ svg {
   .sidebar {
     display: none;
   }
+
   .content {
     grid-column: 1 / 4;
   }
+
   .header {
-    grid-template: 1fr/ 1fr 50px;
+    grid-template: 1fr/ 1fr 100px;
+  }
+
+  .settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 801px) {
   .posts {
     padding: 0 30px;
+  }
+  .menu {
+    display: none;
   }
 }

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: #323232;
 }
 
 /* resert */
@@ -11,6 +12,10 @@ ul {
 
 li {
   list-style: none;
+}
+
+button {
+  color: #333333;
 }
 
 a {
@@ -26,11 +31,15 @@ img {
   max-width: 100%;
 }
 
+svg path {
+  fill: inherit;
+}
+
 /* styles */
 
 .layout {
   display: grid;
-  grid-template: 55px 1fr/ 25% 50% 25%;
+  grid-template: 60px 1fr/ 25% 50% 25%;
   height: 100vh;
 }
 
@@ -50,14 +59,45 @@ img {
   align-items: center;
 }
 
+.logo-facebook path {
+  fill: url(#my-cool-gradient) #0074fe;
+}
+
+.logo-facebook:hover path {
+  fill: #0074fe;
+}
+
 .search__input {
   background: #ecedf1;
   border: none;
-  padding: 8px 15px;
+  padding: 8px 36px;
   border-radius: 15px;
   outline: none;
   margin-left: 10px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.65;
+  width: 100%;
+}
+
+.search__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search__container svg {
+  width: 18px;
+  left: 22px;
+  position: absolute;
+  fill: #67686e;
+}
+
+.settings img {
+  width: 21px;
+  background: #ddd;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .sidebar {
@@ -69,8 +109,8 @@ img {
 
 .content {
   background-color: #f2f3f5;
-  padding: 20px;
-  max-height: calc(100vh - 55px);
+  padding: 10px 25px;
+  max-height: calc(100vh - 60px);
   overflow: auto;
 }
 
@@ -99,7 +139,10 @@ img {
 }
 
 .option__img {
-  margin-right: 5px;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
 }
 
 .content {
@@ -113,9 +156,11 @@ img {
 
 .stories {
   display: flex;
-  justify-content: space-around;
   font-size: 14px;
   letter-spacing: 0.5px;
+  max-width: 100%;
+  padding-bottom: 10px;
+  overflow-x: auto;
 }
 
 .storie {
@@ -124,10 +169,11 @@ img {
   justify-content: space-between;
   height: 175px;
   background-size: cover;
-  width: 100px;
+  min-width: 100px;
   background-blend-mode: multiply;
   background-color: #00000045;
   padding: 10px;
+  margin-right: 10px;
   border-radius: 10px;
   background-image: url(./images/perfil.jpg);
   color: #fff;
@@ -148,24 +194,23 @@ img {
 
 .add__post {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #fff;
   border-radius: 5px;
-  padding: 10px 5px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .add__post button {
   width: 75%;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   background: #f2f3f5;
   border-radius: 8px;
+  outline: none;
 }
 
 .posts {
   margin-top: 2em;
-  padding: 0 30px;
 }
 
 .post {
@@ -186,7 +231,7 @@ img {
 }
 
 .post__username {
-  padding-bottom: 6px;
+  padding-bottom: 2px;
 }
 
 .post__description {
@@ -234,7 +279,7 @@ img {
   background: #fff;
   padding: 10px;
   border-radius: 4px;
-  color: #000;
+  color: #333333;
   display: block;
   margin-right: 5px;
   font-weight: 600;
@@ -300,7 +345,7 @@ svg {
   content: '';
   height: 2px;
   width: 70%;
-  bottom: -13px;
+  bottom: -16px;
   left: 15%;
   position: absolute;
 }
@@ -332,6 +377,10 @@ svg {
   margin: 0;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .blur {
   filter: blur(1px);
 }
@@ -340,20 +389,56 @@ svg {
   border-radius: 50%;
 }
 
+.br-5 {
+  border-radius: 5px;
+}
+
 .p-10 {
   padding: 10px;
 }
 
 .scroll::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
+}
+
+.scroll {
+  transition: all 0.3s;
 }
 
 .scroll::-webkit-scrollbar-track {
-  /* background: #ddd; */
   background: #f2f3f5;
 }
 
+.scroll:hover::-webkit-scrollbar-track {
+  background: rgba(215, 218, 224, 0.3);
+}
+
 .scroll::-webkit-scrollbar-thumb {
-  background: rgba(144, 143, 143, 0.8);
+  background: transparent;
   border-radius: 10px;
+}
+
+.scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(144, 143, 143, 0.8);
+}
+
+@media (max-width: 800px) {
+  .navbar,
+  .contacts,
+  .sidebar {
+    display: none;
+  }
+  .content {
+    grid-column: 1 / 4;
+  }
+  .header {
+    grid-template: 1fr/ 1fr 50px;
+  }
+}
+
+@media (min-width: 801px) {
+  .posts {
+    padding: 0 30px;
+  }
 }

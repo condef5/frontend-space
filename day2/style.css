@@ -180,15 +180,15 @@ svg path {
 }
 
 .storie:nth-child(3n + 1) {
-  background-image: url(./images/ternurita.jpg);
+  background-image: url(./images/user-1.jpg);
 }
 
 .storie:nth-child(3n) {
-  background-image: url(./images/foca.jpg);
+  background-image: url(./images/user-2.jpg);
 }
 
 .storie:nth-child(3n + 2) {
-  background-image: url(./images/perfil.jpg);
+  background-image: url(./images/user-3.jpg);
 }
 
 .circle {

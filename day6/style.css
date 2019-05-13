@@ -1,0 +1,47 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background-color: #5a5c68;
+  min-width: 320px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.symbols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  text-align: center;
+}
+
+.symbols > div {
+  background-color: #3d4049;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 2em;
+  padding: 5px;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+.symbols > .symbol {
+  background-color: #bcc0c7;
+}
+
+.result {
+  margin-bottom: 1em;
+  line-height: 45px;
+  height: 45px;
+  background-color: #c1d798;
+  border-radius: 5px;
+  font-size: 26px;
+  padding: 0 10px;
+  color: #fff;
+}

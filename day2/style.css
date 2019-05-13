@@ -435,7 +435,7 @@ svg {
   background: rgba(144, 143, 143, 0.8);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbar,
   .contacts,
   .sidebar {

@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Old Calculator</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <form id="formCalculator">
-      <input type="number" required name="num1" id="num1" />
-      <input type="number" required name="num2" id="num2" />
-      <select name="operations">
+      <input
+        type="number"
+        required
+        placeholder="Numero 1"
+        name="num1"
+        id="num1"
+      />
+      <input
+        type="number"
+        required
+        placeholder="Numero 2"
+        name="num2"
+        id="num2"
+      />
+      <select name="operations" class="select">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
@@ -19,7 +32,7 @@
         <option value="**">**</option>
       </select>
       <input type="submit" value="Calculate" />
-      <output name="result"></output>
+      <output name="result" class="output"></output>
     </form>
   </body>
   <script src="main.js"></script>

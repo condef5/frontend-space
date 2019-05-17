@@ -117,10 +117,19 @@ filter(arr, (num) => num > 2);
 //  [3, 4, 5]
 
 // reduce
-const reduce = (arr, fn, initValue) => {
-  return arr.length > 0
-    ? reduce(arr.slice(1), fn, fn(initValue, arr[0]))
-    : initValue;
+// const reduce = (arr, fn, initValue) => {
+//   return arr.length > 0
+//     ? reduce(arr.slice(1), fn, fn(initValue, arr[0]))
+//     : initValue;
+// };
+
+const reduce = (arr, fn, initialValue) => {
+  const recurse = (remaining, prev, idx) =>
+    !remaining.length
+      ? prev
+      : recurse(remaining.slice(1), fn(prev, remaining[0], idx, arr), idx + 1);
+
+  return recurse(arr, initialValue, 0);
 };
 
 //  example reduce

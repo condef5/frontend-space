@@ -10,11 +10,13 @@ Object.deepFreeze = function(object) {
 
 // tests
 
-// var a = { b: [42, { x: 9 }] };
-// Object.deepFreeze(a);
+const a = { b: [42, { x: 9 }] };
+Object.deepFreeze(a);
 
-// a.b = 42;
+a.b = 12;
 // Test.assertSimilar(a.b, [42, { x: 9 }]);
+console.log(a.b); // [ 42, { x: 9 } ]
 
-// a.b[1] = 42;
+a.b[1] = 102;
 // Test.assertSimilar(a.b[1], { x: 9 });
+console.log(a.b); // [ 42, { x: 9 } ]

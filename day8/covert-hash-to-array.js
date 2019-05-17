@@ -5,3 +5,8 @@ function convertHashToArray(hash) {
       return [key, hash[key]];
     });
 }
+
+console.log(
+  convertHashToArray({ name: 'Jeremy', age: 24, role: 'Software Engineer' })
+);
+// [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]

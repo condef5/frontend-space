@@ -9,8 +9,3 @@ function gooseFilter(birds) {
 
   return birds.filter((bird) => !geese.includes(bird));
 }
-
-const cat = {
-  sound: 'meow',
-  age: 5
-};

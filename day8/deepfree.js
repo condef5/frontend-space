@@ -3,8 +3,8 @@ Object.deepFreeze = function(object) {
 
   Object.freeze(object);
 
-  Object.keys(object).forEach((key) => {
-    Object.deepFreeze(object[key]);
+  Object.values(object).forEach((value) => {
+    Object.deepFreeze(value);
   });
 };
 
